@@ -51,4 +51,4 @@ We welcome contributions to this project.
 ## Contact
 
 **Email**: jean-marc.lina@etsmtl.ca\
-**Email**: michael-christopher.foti.1@ens.etsmtl.ca# RnB-Wavelet
+**Email**: michael-christopher.foti.1@ens.etsmtl.ca
