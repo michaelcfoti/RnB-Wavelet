@@ -22,7 +22,7 @@ In the supplementary demo folder, two additional demos can be executed:
 - `Spectral_filtering.m`: Fourier spectral method computing the arrythmic spectrum
  
 - `Rhythmic_neural_mass.m`:  RnB-wavelet applied on a single epoch, illustrating :
-- 
+
     - Original signal vs. resulting rhythmic signal 
     - Rhythmic spectrum derived  the rhythmic signal
 
