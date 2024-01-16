@@ -19,7 +19,7 @@ Run the main script ` RnB_wavelet_main.m `. The output will include a figure ill
 
 In the supplementary demo folder, two additional demos can be executed:
 
-- `Spectral_filtering.m`: Spectral method computing the arrythmic spectrum
+- `Spectral_filtering.m`: Fourier spectral method computing the arrythmic spectrum
  
 - `Rhythmic_neural_mass.m`:  RnB-wavelet applied on a single epoch, illustrating :
 - 
