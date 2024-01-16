@@ -4,7 +4,8 @@
 
 Current methodologies rely on the Fourier transform and are limited to separating the rhythmic and arrhythmic components from the power spectrum.
 
-The RnB (rhythms and background)-Wavelet model shifts this paradigm by utilizing wavelet analysis, allowing the separation of these components at the temporal level of a signal.  
+The RnB (rhythms and background)-Wavelet model shifts this paradigm by utilizing wavelet analysis, allowing the separation of these components at the temporal level of a signal. 
+
 The algorithm extracts a ‘rhythmic signal’ by filtering out the arrhythmic components from the wavelet coefficients.
 
 The following demo illustrates the RnB- wavelet method.
