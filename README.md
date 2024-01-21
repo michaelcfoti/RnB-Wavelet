@@ -1,4 +1,4 @@
-# RnB-Wavelet
+# RnB-Wavelet - EEG spectroscopy
 
 ## Description
 
