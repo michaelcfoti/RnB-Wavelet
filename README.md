@@ -10,12 +10,12 @@ The algorithm extracts a ‘rhythmic signal’ by filtering out the arrhythmic c
 
 The following demo illustrates the RnB-Wavelet method.
 
-1. Irasa
-2. Fooof
+1. Wen H, Liu Z. Separating Fractal and Oscillatory Components in the Power Spectrum of Neurophysiological Signal. Brain Topogr. 2016 Jan;29(1):13-26. doi: 10.1007/s10548-015-0448-0. Epub 2015 Aug 29. PMID: 26318848; PMCID: PMC4706469.
+2. Donoghue T, Haller M, Peterson EJ, Varma P, Sebastian P, Gao R, Noto T, Lara AH, Wallis JD, Knight RT, Shestyuk A, Voytek B (2020). Parameterizing neural power spectra into periodic and aperiodic components. Nature Neuroscience, 23, 1655-1665. DOI: 10.1038/s41593-020-00744-x
    
 ## Usage
 
-Run the main script ` RnB_wavelet_main.m `. The output will include a figure illustrating the following:
+Run the main script ` RnB_wavelet_main.m `. In the command window, you will asked to select the intracranial recordings of a specific region. The output will include a figure illustrating the following:
 
 - Average rhythmic spectrum
 - Beta distribution of the dataset
@@ -27,7 +27,7 @@ In the supplementary demo folder, two additional demos can be executed:
 - `Rhythmic_neural_mass.m`:  RnB-wavelet applied on a single epoch, illustrating :
 
     - Original signal vs. resulting rhythmic signal 
-    - Rhythmic spectrum derived  the rhythmic signal
+    - Rhythmic spectrum derived from the rhythmic signal
 
 ## File structure
 
@@ -50,7 +50,7 @@ Link:
 
 ## Contributions
 
-We welcome contributions to this project.
+Comments and contribution to this project are encouraged and welcomed.
 
 ## Contact
 
