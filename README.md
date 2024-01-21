@@ -8,6 +8,9 @@ The RnB (rhythms and background)-Wavelet model shifts this paradigm by using dis
 
 The algorithm extracts a ‘rhythmic signal’ by filtering out the arrhythmic components from the wavelet coefficients.
 
+<img src="Image20240121105100.png" alt="Best Image" width="200"/>
+
+
 The following demo illustrates the RnB-Wavelet method.
 
 1. Wen H, Liu Z. Separating Fractal and Oscillatory Components in the Power Spectrum of Neurophysiological Signal. Brain Topogr. 2016 Jan;29(1):13-26. doi: 10.1007/s10548-015-0448-0. Epub 2015 Aug 29. PMID: 26318848; PMCID: PMC4706469.
