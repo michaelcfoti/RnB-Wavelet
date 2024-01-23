@@ -3,7 +3,7 @@
 
 ## Description
 
-Current methodologies [1,2] rely on the Fourier analysis and are limited to disentangle the rhythmic and arrhythmic activities from the Fourier spectral power.
+Current methodologies (Wen & Liu,2016; Donoghue et al.,2020) rely on the Fourier analysis and are limited to disentangling the rhythmic and arrhythmic activities from the Fourier spectral power.
 
 The RnB (rhythms and background)-Wavelet model shifts this paradigm by using discrete wavelet analysis, allowing the separation of these components at the temporal level of a signal. 
 
@@ -14,19 +14,17 @@ The algorithm extracts a ‘rhythmic signal’ by filtering out the arrhythmic c
 
 The following demo illustrates the RnB-Wavelet method.
 
-1. Wen H, Liu Z. Separating Fractal and Oscillatory Components in the Power Spectrum of Neurophysiological Signal. Brain Topogr. 2016 Jan;29(1):13-26. doi: 10.1007/s10548-015-0448-0. Epub 2015 Aug 29. PMID: 26318848; PMCID: PMC4706469.
-2. Donoghue T, Haller M, Peterson EJ, Varma P, Sebastian P, Gao R, Noto T, Lara AH, Wallis JD, Knight RT, Shestyuk A, Voytek B (2020). Parameterizing neural power spectra into periodic and aperiodic components. Nature Neuroscience, 23, 1655-1665. DOI: 10.1038/s41593-020-00744-x
    
 ## Usage
 
-Run the main script ` RnB_wavelet_main.m `. In the command window, you will asked to select the intracranial recordings of a specific region. The output will include a figure illustrating the following:
+Run the main script ` RnB_wavelet_main.m `. In the command window, you will be asked to select the intracranial recordings of a specific region. The output will include a figure illustrating the following:
 
 - Average rhythmic spectrum
 - Beta distribution of the dataset
 
 In the supplementary demo folder, two additional demos can be executed:
 
-- `Spectral_filtering.m`: Fourier spectral method computing the arrythmic spectrum
+- `Spectral_filtering.m`: Fourier spectral method computing the arrhythmic spectrum
  
 - `Rhythmic_neural_mass.m`:  RnB-wavelet applied on a single epoch, illustrating :
 
