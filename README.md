@@ -9,6 +9,8 @@ The RnB (rhythms and background)-Wavelet model shifts this paradigm by using dis
 
 The algorithm extracts a ‘rhythmic signal’ by filtering out the arrhythmic components from the wavelet coefficients.
 
+![Alt text](img/FigGitHub.png)
+
 
 The following demo illustrates the RnB-Wavelet method.
 
