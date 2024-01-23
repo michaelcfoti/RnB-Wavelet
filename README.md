@@ -1,3 +1,4 @@
+
 # RnB-Wavelet - EEG spectroscopy
 
 ## Description
@@ -7,6 +8,7 @@ Current methodologies [1,2] rely on the Fourier analysis and are limited to dise
 The RnB (rhythms and background)-Wavelet model shifts this paradigm by using discrete wavelet analysis, allowing the separation of these components at the temporal level of a signal. 
 
 The algorithm extracts a ‘rhythmic signal’ by filtering out the arrhythmic components from the wavelet coefficients.
+
 
 The following demo illustrates the RnB-Wavelet method.
 
