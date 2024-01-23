@@ -52,7 +52,7 @@ Link:
 
 ## Contributions
 
-Comments and contribution to this project are encouraged and welcomed.
+Comments and contributions to this project are encouraged and welcomed.
 
 ## Contact
 
