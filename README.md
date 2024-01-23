@@ -38,7 +38,7 @@ In the supplementary demo folder, two additional demos can be executed:
 - Supplementary demo: 
    - `Spectral_filtering.m`
    - `Rhytmic_neural_mass.m` 
-- data: Folder containing dataset.
+- data: Folder containing data:
    - `R16_N3.mat`: Data from Ant. Cingulate (350 epochs)
    - `R18_N3.mat`: Data from Sup. Motor Cortex (300 epochs)
    - `R37_N3.mat`: Data from Sup. Front. Gyrus (350 epochs)
