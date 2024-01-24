@@ -1,4 +1,19 @@
 function GaussM = Best_Betas_Gaussian_fit(betas)
+%
+% Gaussian fit
+%
+% INPUTS:
+%     - betas: beta acrosss all epochs 
+%
+% OUTPUTS:
+%     - GaussM: Structure containing the following fields:
+%         - AIC: 
+%         - prop:        
+%         - mu:        
+%         - x:         
+%         - y:        
+%         - max:
+
 AIC = 10000; OK = 1; n = 1;
 GaussM = Betas_gaussian_fit(betas,n);
 n = n+1;

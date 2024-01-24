@@ -1,4 +1,23 @@
 function make_figure(R,W,S,name)
+%        
+% Plot figures 
+%
+% INPUTS:
+%     - R: Structure containing the following fields:
+%         - pw: power spectrum
+%         - fr: frequency        
+%
+%     - W: Structure containing the following fields:
+%         - wavelet: structure containing wavelet parameters
+%         - beta: average beta        
+%         - betas: beta acrosss all epochs        
+%         - bMin: min beta        
+%         - bMax: max beta        
+%
+%     - S: EEG Data (Nepocs X Nsample) 
+%
+%     - name: region
+
         figure('position',[400 260 800 340],'menu','none','name','RnB');
         colR = [161 22 50]/256;
         % Average spectral analysis of rhytmics signals
