@@ -5,11 +5,11 @@ function make_figure(R,W,S,name)
         subplot(1,2,2)
         hold on; ax0 = gca;
         plot(log(R.fr),smooth(R.pw),'-k','LineWidth',2,'color',colR);
-        setupAxes(ax0,true,log([0.3 64]), []); 
+        setupAxes(ax0,true,log([0.1 64]), []); 
         Y = 1.1*max(smooth(R.pw));
         text(log(0.47),Y,'RnB Spectroscopy','FontSize',14,'FontAngle','italic','FontWeight','bold');
         text(log(8),Y,sprintf('(%d epochs)',size(S,1)),'FontSize',14);
-        xlabel('Frequency (Hz)','FontSize',16);
+        xlabel('Frequency (Hz)','FontSize',20,'Interpreter','latex','FontWeight','bold')
         ylabel('Rhythmic Power Spectral Density (dB)','FontSize',14);
         ylim([0 Y]);
         % Beta distribution
