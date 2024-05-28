@@ -80,7 +80,7 @@ BETAs = zeros(1,Nepo);
         BETAs(isignal) = RnBFracSplineAnal(se,[],FFTan);
         alpha = BETAs(isignal)/2;
         
-        fprintf('(%d, %d: beta = %3.2f)\n',isignal,Nepo,2*alpha)
+        % fprintf('(%d, %d: beta = %3.2f)\n',isignal,Nepo,2*alpha)
         
         % Analysis Filter (considers alpha and beta value)
         [FFTanalysisfilters,~]  = FFTfractsplinefilters(N,alpha0+alpha,tau,type);

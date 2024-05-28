@@ -1,5 +1,4 @@
 function make_figure(R,W,S,name)
-%        
 % Plot figures 
 %
 % INPUTS:
@@ -24,13 +23,18 @@ function make_figure(R,W,S,name)
         subplot(1,2,2)
         hold on; ax0 = gca;
         plot(log(R.fr),smooth(R.pw),'-k','LineWidth',2,'color',colR);
-        setupAxes(ax0,true,log([0.1 64]), []); 
+        setupAxes(ax0,true,log([0.3 64]), []); 
         Y = 1.1*max(smooth(R.pw));
         text(log(0.47),Y,'RnB Spectroscopy','FontSize',14,'FontAngle','italic','FontWeight','bold');
         text(log(8),Y,sprintf('(%d epochs)',size(S,1)),'FontSize',14);
-        xlabel('Frequency (Hz)','FontSize',20,'Interpreter','latex','FontWeight','bold')
+        xlabel('Frequency (Hz)','FontSize',16);
         ylabel('Rhythmic Power Spectral Density (dB)','FontSize',14);
         ylim([0 Y]);
+        Y = max(smooth(R.pw));
+        plot(log([4 4]),[0 Y],':k','LineWidth',1.8);   text(log(2),Y,'$\delta$','Interpreter','latex','FontSize',18,'HorizontalAlignment','center')
+        plot(log([8 8]),[0 Y],':k','LineWidth',1.8);   text(log(6),Y,'$\theta$','Interpreter','latex','FontSize',18,'HorizontalAlignment','center')
+        plot(log([16 16]),[0 Y],':k','LineWidth',1.8); text(log(12),Y,'$\sigma$','Interpreter','latex','FontSize',18,'HorizontalAlignment','center')
+        plot(log([32 32]),[0 Y],':k','LineWidth',1.8); text(log(24),Y,'$\beta$','Interpreter','latex','FontSize',18,'HorizontalAlignment','center')
         % Beta distribution
         subplot(1,2,1)
         hold on; ax = gca; ax.Color = 'none';
