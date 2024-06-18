@@ -22,15 +22,6 @@ Run the main script ` wRnB.m `. In the command window, you will be asked to sele
 - Average rhythmic spectrum
 - Beta distribution of the dataset
 
-In the supplementary demo folder, two additional demos can be executed:
-
-- `Spectral_filtering.m`: Fourier spectral method computing the arrhythmic spectrum
- 
-- `Rhythmic_neural_mass.m`:  RnB-wavelet applied on a single epoch, illustrating :
-
-    - Original signal vs. resulting rhythmic signal 
-    - Rhythmic spectrum derived from the rhythmic signal
-
  Note: There is a alternative interactive live script available where users can add their own data. Download the wRnBLive reposiory. 
       
 
