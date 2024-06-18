@@ -31,7 +31,7 @@ In the supplementary demo folder, two additional demos can be executed:
     - Original signal vs. resulting rhythmic signal 
     - Rhythmic spectrum derived from the rhythmic signal
 
- Note: There is also a alternative interactive live script available where user can add their own data. Download the wRnBLive reposiory. 
+ Note: There is a alternative interactive live script available where users can add their own data. Download the wRnBLive reposiory. 
       
 
 ## File structure
