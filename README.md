@@ -22,19 +22,19 @@ Run the main script ` wRnB.m `. In the command window, you will be asked to sele
 - Average rhythmic spectrum
 - Beta distribution of the dataset
 
- Note: There is a alternative interactive live script available where users can add their own data. Download the wRnBLive reposiory. 
+ Note: There is a alternative interactive live script available where users can add their own data. Download the wRnBLive repository. 
       
 
 ## File structure
 
-- `RnB_wavelet_main.m`: Main script from which the model can be executed.
+- `wRnB.m`: Main script from which the model can be executed.
 - RnB_v01: Folder containing functions called by the main script.
 - data: Folder containing data:
    - `R16_N3.mat`: Data from Ant. Cingulate (350 epochs)
    - `R18_N3.mat`: Data from Sup. Motor Cortex (300 epochs)
    - `R37_N3.mat`: Data from Sup. Front. Gyrus (350 epochs)
    - `R37_N3.mat`: Data from Hippocampus (320 epochs)
-- figures: Contains repositories required to generate figures from the articles
+- figures: Includes all the repositories required to generate figures from the articles
 - wRnBLive: Interactive live script repository
 ## References
 
