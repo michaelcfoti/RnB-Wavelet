@@ -1,4 +1,4 @@
-function RnB_wavelet_main()
+function wRnB()
 
 clc; clear; close all;
 restoredefaultpath;
