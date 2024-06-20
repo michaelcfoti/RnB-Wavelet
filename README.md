@@ -22,7 +22,7 @@ Run the main script ` wRnB.m `. In the command window, you will be asked to sele
 - Average rhythmic spectrum
 - Beta distribution of the dataset
 
- Note: There is a alternative interactive live script available where users can add their own data. Download the wRnBLive repository. 
+ Note: There is an alternative interactive live script available where users can add their own data. Download the wRnBLive repository. 
       
 
 ## File structure
