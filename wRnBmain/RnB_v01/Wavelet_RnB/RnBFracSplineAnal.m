@@ -5,6 +5,8 @@ function beta = RnBFracSplineAnal(s0,betaScales, j12,FFTan)
 %     - s0: EEG Data (Nepocs X Nsample) 
 %          'Nsample' must be a power of 2 in length
 %
+%    - betaScales: scales range to compute slope 
+%
 %     - J12: []
 %
 %     - FFTan: Analysis filter (considering only alpha value)
