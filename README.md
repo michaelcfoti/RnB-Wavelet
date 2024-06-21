@@ -36,3 +36,4 @@ Comments and contributions to this project are encouraged and welcomed.
 
 **Email**: jean-marc.lina@etsmtl.ca\
 **Email**: michael-christopher.foti.1@ens.etsmtl.ca
+**Email**: jonathan.dube.1@umontreal.ca
