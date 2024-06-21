@@ -36,6 +36,12 @@ Run the main script ` wRnB.m `. In the command window, you will be asked to sele
    - `R37_N3.mat`: Data from Hippocampus (320 epochs)
 - figures: Includes all the repositories required to generate figures from the article
 - wRnBLive: Interactive live script repository
+
+## Algorithm parameters
+
+
+
+
 ## References
 
 Please cite as the following,
