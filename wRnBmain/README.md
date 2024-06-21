@@ -28,13 +28,14 @@ J :  number of wavelet decomposition scale
 
 alpha: Controls for the amount of regularity in the signal 
 
-scale: According to sample frequency of your dataset, the beta slope
+scale: According to the sample frequency of your dataset, the computation of the beta slope 
 
 **3. Excute script**
 
 a) Excture the script.
-b) A '.mat' file containing rhytmic signals be saved
 
-The output will include a figure illustrating the following:
-- Average rhythmic spectrum
-- Beta distribution of the dataset
+b) A 'rhythmic_signal.mat' file containing rhytmic signals (Nepochs X Nsamples) will be saved
+
+  A figure illustrating the following will be generated:
+  - Average rhythmic spectrum
+  - Beta distribution of the dataset
