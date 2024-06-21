@@ -6,10 +6,6 @@ restoredefaultpath;
 %  RnB library
 addpath(genpath('./RnB_v01'), 'data')
 
-
-
-
-
 load('R37_N3.mat');
 
 fprintf('\n    You selected: %s\n',region)
