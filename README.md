@@ -9,12 +9,6 @@ The RnB (rhythms and background)-Wavelet model shifts this paradigm by using dis
 
 The algorithm extracts a ‘rhythmic signal’ by filtering out the arrhythmic components from the wavelet coefficients.
 
-![Alt text](Figures/FigGitHub.png)
-
-
-The following demo illustrates the RnB-Wavelet method.
-
-   
 ## Usage
 
 Run the main script ` wRnB.m `. In the command window, you will be asked to select the intracranial recordings of a specific region. The output will include a figure illustrating the following:
@@ -37,9 +31,9 @@ Run the main script ` wRnB.m `. In the command window, you will be asked to sele
 - figures: Includes all the repositories required to generate figures from the article
 - wRnBLive: Interactive live script repository
 
-## Algorithm parameters
+## Framework
 
-
+![Alt text](Figures/FigGitHub.png)
 
 
 ## References
