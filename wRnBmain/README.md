@@ -23,13 +23,13 @@ b) Modify input paramaters in the following function according to your data :
 ```matlab
 [sR, pW] = wRnB_extract_Rhythmic_signals(data_epochs,'alpha', 4,'J', 8, 'betaScales', [1,9]);
 ```
-J :  Set the number of wavelet scales where the arhytmic component is filtered out
+`J` :  Set the number of wavelet scales where the arhytmic component is filtered out
 
 'J' must be lower than the logarithm base 2 of 'Nsample'
 
-alpha: Controls for the amount of regularity in the signal 
+`alpha`: Controls for the amount of regularity in the signal 
 
-scale: According to the sample frequency of your dataset, the beta slope needs to be computed within a set specific scales avoiding border effects. 
+'betaScales': According to the sample frequency of your dataset, the beta slope needs to be computed within a set specific scales avoiding border effects. 
 
 **3. Execute script**
 
