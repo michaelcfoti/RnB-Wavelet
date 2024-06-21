@@ -3,7 +3,7 @@ function wRnB()
 clc; clear; close all;
 restoredefaultpath;
 
-% librairy RnB
+%  RnB library
 addpath(genpath('./RnB_v01'), 'data')
 
 fprintf('\n -- RnB Algorithm:\n')
