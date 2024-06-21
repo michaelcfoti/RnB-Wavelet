@@ -30,9 +30,9 @@ alpha: Controls for the amount of regularity in the signal
 
 scale: According to the sample frequency of your dataset, the computation of the beta slope 
 
-**3. Excute script**
+**3. Execute script**
 
-a) Excture the script.
+a) Execute the `wRnBm.m` script.
 
 b) A 'rhythmic_signal.mat' file containing rhytmic signals (Nepochs X Nsamples) will be saved
 
