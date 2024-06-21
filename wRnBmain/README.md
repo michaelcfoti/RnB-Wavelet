@@ -21,7 +21,7 @@ a) Open `wRnBm.m`
 b) Modify input paramaters in the following function according to your data :
 
 ```matlab
-[sR, pW] = wRnB_extract_Rhythmic_signals(data_epochs,'alpha', 4,'J', 8);
+[sR, pW] = wRnB_extract_Rhythmic_signals(data_epochs,'alpha', 4,'J', 8, 'betaScales', [1,9]);
 ```
 J :  Set the number of wavelet scales where the arhytmic component is filtered out
 
@@ -35,7 +35,7 @@ scale: According to the sample frequency of your dataset, the beta slope needs t
 
 a) Execute the `wRnBm.m` script.
 
-b) A 'rhythmic_signal.mat' file containing rhytmic signals (Nepochs X Nsamples) will be saved
+b) A 'rhythmic_signal.mat' file containing rhytmic signals (Nepochs X Nsamples) and the betas for each epochs will be saved in a folder names results
 
   A figure illustrating the following will be generated:
   - Average rhythmic spectrum
