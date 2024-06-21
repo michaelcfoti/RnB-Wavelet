@@ -16,7 +16,7 @@ b) Place your data in the data folder.
 
 **2. Parameters setting**
 
-a) Open 'wRnBmain.m'
+a) Open `wRnBm.m`
 
 b) Modify input paramaters in the following function according to your data :
 
