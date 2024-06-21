@@ -1,4 +1,4 @@
-function beta = RnBFracSplineAnal(s0,j12,FFTan)
+function beta = RnBFracSplineAnal(s0,betaScales, j12,FFTan)
 % Calculate Beta
 %
 % INPUTS:
@@ -17,6 +17,6 @@ function beta = RnBFracSplineAnal(s0,j12,FFTan)
     J     = nextpow2(M1)-1;
     %Perform a fractional spline wavelet transform of the signal
     w  = FFTwaveletanalysis1D(s0,FFTan,J);
-    beta = beta_estimator(w,J,j12);
+    beta = beta_estimator(w,betaScales,j12);
 
 end

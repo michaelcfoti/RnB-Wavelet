@@ -13,7 +13,7 @@ function beta = beta_estimator(w,J,j12)
 
     N = length(w);
     o = 1; N0 = N;
-    for j = 1:J
+    for j = 1:J(2)
         N = N/2;
         a = o:(o-1)+N;
         o = o + N;
@@ -26,7 +26,7 @@ function beta = beta_estimator(w,J,j12)
         eSj(j)  = etaj(j)*Sj(j);
         jeSj(j) = j*eSj(j);
     end
-    if isempty(j12), j1 = 1; j2 = J-2; else, j1 = 1; j2 = 5; end
+    if isempty(j12), j1 = J(1); j2 = J(2); else, j1 = 1; j2 = 5; end
     beta = (sum(Sj(j1:j2))*sum(jeSj(j1:j2)) - sum(jSj(j1:j2))*sum(eSj(j1:j2)))./ ...
         (sum(Sj(j1:j2))*sum(j2Sj(j1:j2)) - sum(jSj(j1:j2))*sum(jSj(j1:j2)));     
 end

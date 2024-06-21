@@ -33,6 +33,7 @@ addpath(genpath('FracSpline'))
 J = 7;
 alpha0 = 4;
 tau    = 0;
+betaScales = [1,J];
 type   = 'ortho';
 
 for i = 1:length(varargin)
@@ -43,6 +44,8 @@ for i = 1:length(varargin)
                     J = varargin{i+1};
                 case 'alpha0'
                     alpha0 = varargin{i+1};
+                case 'betaScales'
+                    betaScales = varargin{i+1};
             end
         end
     end
@@ -77,7 +80,7 @@ BETAs = zeros(1,Nepo);
         sh = se./nh;
 
         % Calculate Beta
-        BETAs(isignal) = RnBFracSplineAnal(se,[],FFTan);
+        BETAs(isignal) = RnBFracSplineAnal(se,betaScales,[],FFTan);
         alpha = BETAs(isignal)/2;
         
         % fprintf('(%d, %d: beta = %3.2f)\n',isignal,Nepo,2*alpha)
