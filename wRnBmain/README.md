@@ -1,12 +1,21 @@
 
 # RnB-Wavelet 
 
-## Description
+## Tutorial
 
 Run the main script ` wRnB.m `. In the command window, you will be asked to select the intracranial recordings of a specific region. The output will include a figure illustrating the following:
 
 - Average rhythmic spectrum
 - Beta distribution of the dataset
+
+  
+## Parameters
+
+You can modify the following parameters suited to your data:
+
+J: 
+Alpha:
+ 
 
  
 ## File structure
@@ -19,13 +28,6 @@ Run the main script ` wRnB.m `. In the command window, you will be asked to sele
    - `R37_N3.mat`: Data from Sup. Front. Gyrus (350 epochs)
    - `R37_N3.mat`: Data from Hippocampus (320 epochs)
    
-  
-## Parameters
 
-You can modify the following parameters suited to your data:
-
-J: 
-Alpha:
- 
 
 
