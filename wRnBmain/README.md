@@ -29,7 +29,7 @@ b) Modify input paramaters in the following function according to your data :
 
 `alpha`: Controls for the amount of regularity in the signal 
 
-'betaScales': According to the sample frequency of your dataset, the beta slope needs to be computed within a set specific scales avoiding border effects. 
+`betaScales`: According to the sample frequency of your dataset, the beta slope needs to be computed within a set specific scales avoiding border effects. 
 
 **3. Execute script**
 
