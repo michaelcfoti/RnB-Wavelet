@@ -10,6 +10,6 @@
 2) Parameters setting 
 
 ``` matlab
-
+ wRnB_extract_Rhythmic_signals(data_epochs,'alpha', 4,'J', 8);
 
 
