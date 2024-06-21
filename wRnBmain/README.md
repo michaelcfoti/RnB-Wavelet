@@ -6,13 +6,13 @@ This tutorial explain how users can extract rhytmic signals using their own data
 
 a) Set data format:
 
-  Your data must be a '.mat' file contain the following variables, named accordingly:
-  - data_epochs: Array in double of size : Nepochs X Nsamples
-  - fs : sampling rate 
+  Your data must be a `.mat` file contain the following variables, named accordingly:
+  - `data_epochs`: Array in double of size : Nepochs X Nsamples
+  - `fs` : sampling rate 
 
    The length of Nsample must be a power of 2.
    
-b) Place your data in the data folder.
+b) Place your data in the `data` folder.
 
 **2. Parameters setting**
 
