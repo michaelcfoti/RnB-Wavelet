@@ -2,6 +2,8 @@
 
 This tutorial explain how users can extract rhytmic signals using their own data set. 
 
+As an example, we use a dataset containing data from the hippocampus.
+
 **1. Load your data set**
 
 a) Set data format:
@@ -14,22 +16,30 @@ a) Set data format:
    
 b) Place your data in the `data` folder.
 
+c) Open `wRnBm.m` and modify the following line of code according to the matfile you added.
+
+```matlab
+load('***.mat');
+```
+
 **2. Parameters setting**
 
 a) Open `wRnBm.m`
 
-b) Modify input paramaters in the following function according to your data :
+b) Modify input parameters  in the following function according to your data :
 
 ```matlab
 [sR, pW] = wRnB_extract_Rhythmic_signals(data_epochs,'alpha', 4,'J', 8, 'betaScales', [1,9]);
 ```
-`J` :  Set the number of wavelet scales where the arhytmic component is filtered out
+`J` :  Set the number of wavelet scales for filtering the arrhythmic component.
 
 'J' must be lower than the logarithm base 2 of 'Nsample'
 
 `alpha`: Controls for the amount of regularity in the signal 
 
-`betaScales`: According to the sample frequency of your dataset, the beta slope needs to be computed within a set specific scales avoiding border effects. 
+`betaScales`: Specify the set of scales used to compute the arhythmic slope.
+
+According to the sampling frequency of your dataset, the beta slope can be computed across a set of specific scales to avoid border effects and spurious signals present across all wavelet coefficients (i.e.  60Hz).
 
 **3. Execute script**
 
