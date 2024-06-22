@@ -64,7 +64,7 @@ To optimize the computation of the slope by avoiding the 60Hz frequency and bord
 
 a) Execute the `wRnBm.m` script.
 
-b) A `rhythmic_signal.mat` file containing rhytmic signals (Nepochs X Nsamples) and the betas for each epochs will be saved in a folder names `results`
+b) A `wRnB_results.mat` file containing rhytmic signals (Nepochs X Nsamples) and the betas for each epochs will be saved in a folder names `results`
 
   A figure illustrating the following will be generated:
   - Average rhythmic spectrum
