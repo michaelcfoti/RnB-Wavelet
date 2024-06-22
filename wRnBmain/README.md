@@ -16,7 +16,7 @@ a) Set data format:
    
 b) Place your data in the `data` folder.
 
-c) Open `wRnBm.m` and modify the following line of code according to the matfile you added.
+c) Open `wRnBm.m` and modify the following line of code according to the matfile  you've added.
 
 ```matlab
 load('***.mat');
