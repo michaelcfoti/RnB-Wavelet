@@ -20,9 +20,13 @@ pR      = RnB_compute_spectre_brut(sR,fs);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
 
 % Save 
-createDirectory('results');
-betas = pW.betas;
-save('results/rhythmic_signal.mat', 'sR','betas');
+if exist('sR','var')
+    fprintf(' -- You saved in ''wRnB_results.mat'' the following results\n');
+    fprintf('\t . The rhythmic signals (sR : epochs x time)\n');
+    fprintf('\t . The beta exponents (betas : epochs x 1)\n');
+    betas = pW.betas;
+    save('wRnB_results.mat','betas','sR');
+end
 
 % Display 
 make_figure(pR,pW,sR,region);

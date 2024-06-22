@@ -27,7 +27,7 @@ addpath(genpath('FracSpline'))
 
 % Default Wavelet parameters
 J = 7;
-alpha0 = 1.5;
+alpha0 = 4;
 tau    = 0;
 type   = 'ortho';
 verbose = 1;

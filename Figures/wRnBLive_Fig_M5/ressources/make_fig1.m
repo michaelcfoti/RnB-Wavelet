@@ -19,13 +19,9 @@ colR = [161 22 50]/256;
     plot(B.time,B.neural_mass,'LineWidth',1.1);
     xlabel('time','FontSize',14)
     ylim([-0.5 0.5])
-    annotation(f1,'arrow',[0.534444444444444 0.508888888888889],...
-    [0.909 0.845],'LineWidth',1);
-    annotation(f1,'arrow',[0.577777777777778 0.552222222222223],...
-    [0.8465 0.7825],'LineWidth',1);
-    text(5,0.5,'3Hz (variable)','FontSize',14)
+    text(1,0.4,'3Hz (variable amplitude)','FontSize',14)
     text('FontSize',14,'String','13Hz',...
-    'Position',[6.375 0.346153846153846 0]);
+    'Position',[4 -0.25 0]);
     xlabel('time','FontSize',14);
     ylabel('oscillations (A.U.)','FontSize',13)
     pause(0.001)

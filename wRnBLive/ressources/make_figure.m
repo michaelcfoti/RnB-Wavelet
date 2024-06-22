@@ -4,15 +4,14 @@ function make_figure(R,W,S,name)
         % Average spectral analysis of rhytmics signals
         subplot(1,2,2)
         hold on; ax0 = gca;
-        plot(log(R.fr),smooth(R.pw),'-k','LineWidth',2,'color',colR);
+        plot(log(R.fr),smooth(R.pw),'-k','LineWidth',2.25,'color',colR);
         setupAxes(ax0,true,log([0.3 64]), []); 
-        Y = max(0.01,1.1*max(smooth(R.pw)));
+        Y = max(0.01,1.15*max(smooth(R.pw)));
         text(log(0.47),Y,'RnB Spectroscopy','FontSize',14,'FontAngle','italic','FontWeight','bold');
-        text(log(8),Y,sprintf('(%d epochs)',size(S,1)),'FontSize',14);
         xlabel('Frequency (Hz)','FontSize',16);
         ylabel('Rhythmic Power Spectral Density (dB)','FontSize',14);
         ylim([0 Y]);
-        Y = max(0.009,max(smooth(R.pw)));
+        Y = max(0.009,1.05*max(smooth(R.pw)));
         plot(log([4 4]),[0 Y],':k','LineWidth',1.8);   text(log(2),Y,'$\delta$','Interpreter','latex','FontSize',18,'HorizontalAlignment','center')
         plot(log([8 8]),[0 Y],':k','LineWidth',1.8);   text(log(6),Y,'$\theta$','Interpreter','latex','FontSize',18,'HorizontalAlignment','center')
         plot(log([16 16]),[0 Y],':k','LineWidth',1.8); text(log(12),Y,'$\sigma$','Interpreter','latex','FontSize',18,'HorizontalAlignment','center')
@@ -27,7 +26,7 @@ function make_figure(R,W,S,name)
        
         % Gaussina fit (here, one gaussian)
         Gauss = Betas_Gaussian_fit(W.betas');
-        plot(Gauss.x,Gauss.y,'-','LineWidth',2,'Color',colR);
+        plot(Gauss.x,Gauss.y,'-','LineWidth',2.25,'Color',colR);
         % print the modes:
         Y = 1.25*max(Gauss.y);
         X = 0.1+min(Gauss.x);
@@ -43,9 +42,8 @@ function make_figure(R,W,S,name)
         ylim([0 1.25*max(Gauss.y)])
         hold off
         
-fprintf('\n    The left figure displays the distribution of the scaling\n')
-fprintf('    exponent across the epochs. The curve is an optimal fit\n')
-fprintf('    (in terms of an optimal Akaike Index Criteria) with a mixture\n')
-fprintf('    of Gaussians. The right figure shows the ''RnB spectroscopy''\n')
-fprintf('    of the %s during NREM sleep.\n',name)
+fprintf('\n    Bases on %d epochs, the left figure displays the distribution of the\n',size(S,1))
+fprintf('    scaling exponent across the epochs. The curve is an optimal fit (in\n')
+fprintf('    terms of an optimal Akaike Index Criteria) with a mixture of Gaussians.\n')
+fprintf('    The right figure shows the ''RnB spectroscopy'' of the %s\n',name)
 end
