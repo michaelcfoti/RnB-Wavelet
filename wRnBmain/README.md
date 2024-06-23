@@ -2,7 +2,7 @@
 
 This tutorial explain how users can extract rhytmic signals using their own data set. 
 
-As an example, we use a dataset containing data from the hippocampus.
+As an example, we use a dataset containing data from the hippocampus from the MNI-open EEG atlas (N. Ellenrieder et al., 2020).
 
 **1. Load your data set**
 
@@ -64,8 +64,8 @@ To optimize the computation of the slope by avoiding the 60Hz frequency and bord
 
 a) Execute the `wRnBm.m` script.
 
-b) A `wRnB_results.mat` file containing rhytmic signals (Nepochs X Nsamples) and the betas for each epochs will be saved in a folder names `results`
-
+b) A `wRnB_results.mat` file containing rhytmic signals (Nepochs X Nsamples) and the betas (1 X Nepochs) will be saved in the current folder
+  
   A figure illustrating the following will be generated:
   - Average rhythmic spectrum
   - Beta distribution of the dataset
