@@ -5,7 +5,7 @@
 
 Current methodologies (Wen & Liu,2016; Donoghue et al.,2020) rely on the Fourier analysis and are limited to disentangling the rhythmic and arrhythmic activities from the Fourier spectral power.
 
-The RnB (rhythms and background)-Wavelet model shifts this paradigm by using discrete wavelet analysis, allowing the separation of these components at the temporal level of a signal. 
+The RnB (rhythms and background) Wavelet model shifts this paradigm by using discrete wavelet analysis, allowing the separation of these components at the signal's temporal level. 
 
 The algorithm extracts a ‘rhythmic signal’ by filtering out the arrhythmic components from the wavelet coefficients.
  
