@@ -31,15 +31,15 @@ b) Modify input parameters  in the following function according to your data :
 ```matlab
 [sR, pW] = wRnB_extract_Rhythmic_signals(data_epochs,'alpha', 4,'J', 8, 'betaScales', [1,9]);
 ```
-`J` :  Set the number of wavelet scales for filtering the arrhythmic component.
+Three parameters can be modified: J, alpha and betaScales.
 
-'J' must be lower than the logarithm base 2 of 'Nsample'
-
-`alpha`: Controls for the amount of regularity in the signal 
+Here is their explanation (Also refer to eq.(4) of the article for further details ) : 
 
 `betaScales`: Specify the scales used to compute the arhythmic slope.
 
-According to the sampling frequency of your dataset, the beta slope can be computed across a set of specific scales to avoid border effects and spurious signals present across all wavelet coefficients (i.e.  60Hz).
+In our example, the slope is calculated across scales 1 to 9.
+
+This parameter should be set based on your dataset's sampling frequency to ensure that the computation of the slope across scales avoids border effects and spurious signals across wavelet coefficients (e.g., 60Hz).
 
 As an example, if your sampling frequency is 500 Hz, the approximate set of frequencies for different scales corresponds to the following table:
 
@@ -59,6 +59,13 @@ As an example, if your sampling frequency is 500 Hz, the approximate set of freq
 
 The scales can be set from scale 4 to 9 to optimize the slope computation by avoiding the 60Hz frequency and border effects.
 
+`J` :  Set the number of wavelet scales for filtering the arrhythmic component.
+
+For this example, we set 'J' = 8, wich means that arhytmic component will be filtered out up to scale number 8. 
+
+Users must set a 'J' value  lower than the logarithm base 2 of 'Nsample' of their dataset. If Nsample = 4096, then J must lower than 12.  
+
+`alpha`: Controls for the amount of regularity (smoothness) in the signal. We set this value to 4. 
 
 **3. Execute script**
 
