@@ -1,6 +1,7 @@
+<<<<<<< HEAD
 ## Tutorial
 
-This tutorial explain how users can extract rhytmic signals using their own data set. 
+This tutorial explains how users can extract rhythmic signals using their data set. 
 
 As an example, we use a dataset containing data from the hippocampus from the MNI-open EEG atlas (N. Ellenrieder et al., 2020).
 
@@ -57,7 +58,7 @@ As an example, if your sampling frequency is 500 Hz, the approximate set of freq
 |      W10       |    0.24 |    0.49 |
 |      W11       |    0.12 |    0.24 |
 
-To optimize the computation of the slope by avoiding the 60Hz frequency and border effects, the scales can be set from scale  4 to 9.
+The scales can be set from scale 4 to 9 to optimize the slope computation by avoiding the 60Hz frequency and border effects.
 
 
 **3. Execute script**
