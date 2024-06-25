@@ -39,7 +39,7 @@ b) Modify input parameters  in the following function according to your data :
 
 `betaScales`: Specify the set of scales used to compute the arhythmic slope.
 
-According to the sampling frequency of your dataset, the beta slope can be computed across a set of specific scales to avoid border effects and spurious signals present across all wavelet coefficients (i.e.  60Hz).
+According to the sampling frequency of your dataset, the beta slope can be computed across a set of specific scales to avoid border effects and spurious frequency present across all wavelet coefficients (i.e.  60Hz).
 
 As an example, if your sampling frequency is 500 Hz, the approximate set of frequencies for different scales corresponds to the following table:
 
