@@ -8,15 +8,15 @@ As an example, we use a dataset containing data from the hippocampus from the MN
 
 a) Set data format:
 
-  Your data must be a `.mat` file contain the following variables, named accordingly:
-  - `data_epochs`: Array in double of size : Nepochs X Nsamples
+  Your data must be a `.mat` file containing the following variables, named accordingly:
+  - `data_epochs`: Array in double of size: Nepochs X Nsamples
   - `fs` : sampling rate 
 
    The length of Nsample must be a power of 2.
    
 b) Place your data in the `data` folder.
 
-c) Open `wRnBm.m` and modify the following line of code according to the matfile  you've added.
+c) Open `wRnBm.m` and modify the following line of code according to the matfile you've added.
 
 ```matlab
 load('***.mat');
@@ -37,7 +37,7 @@ b) Modify input parameters  in the following function according to your data :
 
 `alpha`: Controls for the amount of regularity in the signal 
 
-`betaScales`: Specify the set of scales used to compute the arhythmic slope.
+`betaScales`: Specify the scales used to compute the arhythmic slope.
 
 According to the sampling frequency of your dataset, the beta slope can be computed across a set of specific scales to avoid border effects and spurious signals present across all wavelet coefficients (i.e.  60Hz).
 
@@ -57,14 +57,14 @@ As an example, if your sampling frequency is 500 Hz, the approximate set of freq
 |      W10       |    0.24 |    0.49 |
 |      W11       |    0.12 |    0.24 |
 
-To optimize the computation of the slope by avoiding the 60Hz frequency and border effects, the scales to compute the slope can be set from scale  4 to 9.
+To optimize the computation of the slope by avoiding the 60Hz frequency and border effects, the scales can be set from scale  4 to 9.
 
 
 **3. Execute script**
 
 a) Execute the `wRnBm.m` script.
 
-b) A `wRnB_results.mat` file containing rhytmic signals (Nepochs X Nsamples) and the betas (1 X Nepochs) will be saved in the current folder
+b) A `wRnB_results.mat` file containing rhythmic signals (Nepochs X Nsamples) and the betas (1 X Nepochs) will be saved in the current folder
   
   A figure illustrating the following will be generated:
   - Average rhythmic spectrum
