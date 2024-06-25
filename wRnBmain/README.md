@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Tutorial
 
 This tutorial explains how users can extract rhythmic signals using their data set. 
