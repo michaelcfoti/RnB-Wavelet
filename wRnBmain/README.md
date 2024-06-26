@@ -63,9 +63,9 @@ The scales can be set from scale 4 to 9 to optimize the slope computation by avo
 
 For this example, we set 'J' = 8, wich means that arhytmic component will be filtered out up to scale number 8. 
 
-Users must set a 'J' value  lower than the logarithm base 2 of 'Nsample' of their dataset. If Nsample = 4096, then J must lower than 12.  
+Users must set a 'J' value  lower than the logarithm base 2 of 'Nsample' of their dataset. If Nsample = 4096, then J must lower than 12. 
 
-`alpha`: Controls for the amount of regularity (smoothness) in the signal. We set this value to 4. 
+`alpha`: Controls for the amount of regularity (smoothness) in the signal. We set this value to 4. This parameter is not know, but keeping it at 4 remains a suitable choice.
 
 **3. Execute script**
 
