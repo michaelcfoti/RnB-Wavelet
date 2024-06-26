@@ -29,9 +29,9 @@ a) Open `wRnBm.m`
 b) Modify input parameters  in the following function according to your data :
 
 ```matlab
-[sR, pW] = wRnB_extract_Rhythmic_signals(data_epochs,'alpha', 4,'J', 8, 'betaScales', [1,9]);
+[sR, pW] = wRnB_extract_Rhythmic_signals(data_epochs,'J', 8, 'betaScales', [1,9]);
 ```
-Three parameters can be modified: J, alpha and betaScales.
+Two parameters can be modified: J and betaScales.
 
 Here is their explanation (Also refer to eq.(4) of the article for further details ) : 
 
@@ -57,15 +57,13 @@ As an example, if your sampling frequency is 500 Hz, the approximate set of freq
 |      W10       |    0.24 |    0.49 |
 |      W11       |    0.12 |    0.24 |
 
-The scales can be set from scale 4 to 9 to optimize the slope computation by avoiding the 60Hz frequency and border effects.
+In this case, the scales can be set from scale 4 to 9 to optimize the slope computation by avoiding the 60Hz frequency and border effects.
 
 `J` :  This parameter sets the number of wavelet scales for filtering the arrhythmic component.
 
 In our example, we set 'J' = 8, meaning that the arrhythmic component will be filtered up to scale number 8. 
 
 Users must set a 'J' value  lower than the logarithm base 2 of 'Nsample' of their dataset. If Nsample = 4096, then J must be lower than 12. 
-
-`alpha`: This parameter controls for the amount of regularity (smoothness) in the signal. In this example, we set the value to 4. This parameter is unknown, but keeping it at 4 remains a suitable choice for users.
 
 **3. Execute script**
 
