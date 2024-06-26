@@ -39,7 +39,7 @@ Here is their explanation (Also refer to eq.(4) of the article for further detai
 
 In our example, the slope is calculated across scales 1 to 9.
 
-It should be set based on your dataset's sampling frequency to ensure that the computation of the slope across scales avoids border effects and spurious signals across wavelet coefficients (e.g., 60Hz).
+Users should set this parameter based on their dataset's sampling frequency to ensure that the computation of the slope across scales avoids border effects and spurious signals across wavelet coefficients (e.g., 60Hz).
 
 As an example, if your sampling frequency is 500 Hz, the approximate set of frequencies for different scales corresponds to the following table:
 
@@ -61,7 +61,7 @@ The scales can be set from scale 4 to 9 to optimize the slope computation by avo
 
 `J` :  This parameter sets the number of wavelet scales for filtering the arrhythmic component.
 
-In our example, we set 'J' = 8, meaning that the arrhythmic component will be filtered out up to scale number 8. 
+In our example, we set 'J' = 8, meaning that the arrhythmic component will be filtered up to scale number 8. 
 
 Users must set a 'J' value  lower than the logarithm base 2 of 'Nsample' of their dataset. If Nsample = 4096, then J must be lower than 12. 
 
@@ -71,7 +71,7 @@ Users must set a 'J' value  lower than the logarithm base 2 of 'Nsample' of thei
 
 a) Execute the `wRnBm.m` script.
 
-b) A `wRnB_results.mat` file containing rhythmic signals (Nepochs X Nsamples) and the betas (1 X Nepochs) will be saved in the current folder
+b) A `wRnB_results.mat` file containing rhythmic signals (Nepochs X Nsamples) and corresponding scaling exponents (1 X Nepochs) will be saved in the current folder
   
   A figure illustrating the following will be generated:
   - Average rhythmic spectrum
