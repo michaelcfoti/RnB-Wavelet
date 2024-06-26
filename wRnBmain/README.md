@@ -31,9 +31,7 @@ b) Modify input parameters  in the following function according to your data :
 ```matlab
 [sR, pW] = wRnB_extract_Rhythmic_signals(data_epochs,'J', 8, 'betaScales', [1,9]);
 ```
-Two parameters can be modified: J and betaScales.
-
-Here is their explanation (Also refer to eq.(4) of the article for further details ) : 
+Two parameters can be modified: J and betaScales (Refer to article for further details ) : 
 
 `betaScales`: This parameter specifies the scales used to compute the arhythmic slope.
 
