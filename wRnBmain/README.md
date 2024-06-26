@@ -4,7 +4,7 @@ This tutorial explains how users can extract rhythmic signals using their data s
 
 As an example, we use a dataset containing data from the hippocampus from the MNI-open EEG atlas (N. Ellenrieder et al., 2020).
 
-**1. Load your data set**
+**1. Load your dataset**
 
 a) Set data format:
 
