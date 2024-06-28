@@ -30,9 +30,9 @@ function [sR,param] = wRnB_extract_Rhythmic_signals(s,varargin)
 addpath(genpath('FracSpline'))
 
 % Default Wavelet parameters
-J = 7;
-alpha0 = 4;
+J = 9;
 tau    = 0;
+alpha0 =4;
 betaScales = [1,J];
 type   = 'ortho';
 
@@ -42,8 +42,6 @@ for i = 1:length(varargin)
             switch varargin{i}
                 case 'J'
                     J = varargin{i+1};
-                case 'alpha0'
-                    alpha0 = varargin{i+1};
                 case 'betaScales'
                     betaScales = varargin{i+1};
             end
