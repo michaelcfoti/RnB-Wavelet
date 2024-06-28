@@ -27,8 +27,8 @@ function make_figure(R,W,S,name)
         Y = 1.1*max(smooth(R.pw));
         text(log(0.47),Y,'RnB Spectroscopy','FontSize',14,'FontAngle','italic','FontWeight','bold');
         text(log(8),Y,sprintf('(%d epochs)',size(S,1)),'FontSize',14);
-        xlabel('Frequency (Hz)','FontSize',16);
-        ylabel('Rhythmic Power Spectral Density (dB)','FontSize',14);
+        xlabel('Frequency (Hz)','FontSize',14,'Interpreter','latex','FontWeight','bold')
+        ylabel('Rhythmic Power Spectral Density (dB)','FontSize',14,'Interpreter','latex','FontWeight','bold')
         ylim([0 Y]);
         Y = max(smooth(R.pw));
         plot(log([4 4]),[0 Y],':k','LineWidth',1.8);   text(log(2),Y,'$\delta$','Interpreter','latex','FontSize',18,'HorizontalAlignment','center')
@@ -56,8 +56,8 @@ function make_figure(R,W,S,name)
             'FontSize',14,'HorizontalAlignment','left','FontAngle','italic');
         end
         plot([2 2],[0 0.7*max(Gauss.y)],':k','LineWidth',2);
-        xlabel('Spectral exponent $\beta$','FontSize',20,'Interpreter','latex','FontWeight','bold')
-        ylabel(name,'FontSize',22,'FontWeight','bold')
+        xlabel('Spectral exponent $\beta$','FontSize',14,'Interpreter','latex','FontWeight','bold')
+        ylabel(name,'FontSize',14,'Interpreter','latex','FontWeight','bold')
         ylim([0 1.25*max(Gauss.y)])
         hold off
         
