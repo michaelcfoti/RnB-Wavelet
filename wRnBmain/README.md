@@ -24,7 +24,7 @@ load('***.mat');
 
 **2. Parameters setting**
 
-a) Open `wRnBm.m`
+a) Open `wRnB.m`
 
 b) Modify input parameters  in the following function according to your data :
 
@@ -44,19 +44,19 @@ In our example, the slope is calculated across scales 1 to 9 with a sampling rat
 
 As an example, if your sampling frequency is 500 Hz, the approximate set of frequencies for different scales corresponds to the following table:
 
-| Wavelet scales |    f1   |    f2   |
-|----------------|---------|---------|
-|       W1       |  125.00 |  250.00 |
-|       W2       |   62.50 |  125.00 |
-|       W3       |   31.25 |   62.50 |
-|       W4       |   15.62 |   31.25 |
-|       W5       |    7.81 |   15.62 |
-|       W6       |    3.91 |    7.81 |
-|       W7       |    1.95 |    3.91 |
-|       W8       |    0.98 |    1.95 |
-|       W9       |    0.49 |    0.98 |
-|      W10       |    0.24 |    0.49 |
-|      W11       |    0.12 |    0.24 |
+| Wavelet scales | frequency range |
+|----------------|-----------------|
+|       W1       |  125.00 - 250.00|
+|       W2       |   62.50 - 125.00|
+|       W3       |   31.25 - 62.50 |
+|       W4       |   15.62 - 31.25 |
+|       W5       |    7.81 - 15.62 |
+|       W6       |    3.91 - 7.81  |
+|       W7       |    1.95 - 3.91  |
+|       W8       |    0.98 - 1.95  |
+|       W9       |    0.49 - 0.98  |
+|      W10       |    0.24 - 0.49  |
+|      W11       |    0.12 - 0.24  |
 
 In this case, the scales can be set from scale 4 to 9 to optimize the slope computation by avoiding the 60Hz frequency and border effects.
 The only other consideration here is to choose a sufficient number of wavelet coefficients to allow a robust estimation of the beta (we recommend at least 4 scales).
