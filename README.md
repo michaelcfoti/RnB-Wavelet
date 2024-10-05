@@ -24,7 +24,8 @@ Set of repositories to download :
 
 Please cite as the following,
 
-    'J. Dubé, M. Foti, S. Jaffard, V. Latreille, B. Frauscher, J. Carrier, J.M. Lina, Rhythms and Background (RnB): The Spectroscopy of Sleep Recordings, Preprint (2024)'
+    'J. Dubé, M. Foti, S. Jaffard, V. Latreille, B. Frauscher, J. Carrier, J.M. Lina, Rhythms and Background (RnB): 
+    The Spectroscopy of Sleep Recordings, Preprint (2024)'
     
 Link:
 
