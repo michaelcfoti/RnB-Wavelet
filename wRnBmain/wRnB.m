@@ -27,7 +27,7 @@ if exist('sR','var')
     save('wRnB_results.mat','betas','sR');
 end
 
-% Display 
+% Display
 make_figure(pR,pW,sR,region);
 fprintf('\nBye.\n')
 end
