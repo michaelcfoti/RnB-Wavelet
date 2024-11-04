@@ -57,7 +57,7 @@ if J > pow2
     fprintf(' Scale (J) set as : %d \n', J);
 end
 if betaScales(2) > pow2
-    fprintf('\n Number of wavelet scales for slope computation (betaScales = %d)  is invalid.',betaScales(2));
+    fprintf('\n Number of wavelet scales for slope computation (betaScales = %d)  is invalid.\n',betaScales(2));
      betaScales(2) = pow2 - 2;
     fprintf(' betaScales set as : %d \n',  betaScales(2));
 end
