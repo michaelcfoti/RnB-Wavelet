@@ -24,10 +24,12 @@ Set of repositories to download :
 
 Please cite as the following,
 
-    'Rhythms and Background (RnB): The Spectroscopy of Sleep Recordings J. Dubé, M. Foti, S. Jaffard, V. Latreille, 
-    B. Frauscher, J. Carrier, J.M. Lina bioRxiv 2024.10.28.620621; doi: https://doi.org/10.1101/2024.10.28.620621'
-    
-Link:
+```plaintext
+Dubé, J., Foti, M., Jaffard, S., Latreille, V., Frauscher, B., Carrier, J., & Lina, J. M.
+(2024). Rhythms and Background (RnB): The Spectroscopy of Sleep Recordings. bioRxiv, 2024.10.28.620621.
+https://doi.org/10.1101/2024.10.28.620621
+```    
+Link: [https://doi.org/10.1101/2024.10.28.620621](https://doi.org/10.1101/2024.10.28.620621)
 
 ## Contributions
 
