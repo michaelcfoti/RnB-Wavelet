@@ -25,7 +25,7 @@ function [wt,r] = soft_schrinkage(w,J)
         wt(3,a) = j*ones(1,N);
     end
     % threshold for schrinkage: 
-    sigma  = mad(wt(2,wt(3,:)==jnoise));
+    sigma  = mad(wt(2,wt(3,:)==jnoise),1);
     lambda = sigma*sqrt(2*log(length(w)));
     % schrinkage:
     nWt = soft(wt(2,:),lambda) .* sign(wt(2,:));
