@@ -111,7 +111,7 @@ BETAs = zeros(1,Nepo);
         sR(isignal,:) = FFTwaveletsynthesis1D(wr,FFTsynthesisfilters,J);
         sR(isignal,:) = sR(isignal,:) .* nh;
 
-     end
+    end
     
     % Save filter paramater and slope values
     param.wavelet.alpha = alpha0;
