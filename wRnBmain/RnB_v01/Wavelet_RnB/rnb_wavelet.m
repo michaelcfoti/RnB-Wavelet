@@ -65,10 +65,10 @@ end
 
 
 % Filters (considers only alpha value)
-[FFTan,FFTsynthesisfilters] = FFTfractsplinefilters(N,alpha0,tau,type);
+[FFTan,FFTsynthesisfilters] = FFTfractsplinefilters(nSamples,alpha0,tau,type);
 
 % Scale segment indices for wavelet representation
-a(1)  = 1; nj(1) = N/2; b(1) = a(1)+nj(1)-1;
+a(1)  = 1; nj(1) = nSamples/2; b(1) = a(1)+nj(1)-1;
 for i = 2:1+J, a(i)=a(i-1)+nj(i-1); nj(i) = nj(i-1)/2; b(i) = a(i)+nj(i)-1; end
 
 % Initialize for output
@@ -91,7 +91,7 @@ BETAs = zeros(1,nEpo);
         % fprintf('(%d, %d: beta = %3.2f)\n',isignal,Nepo,2*alpha)
         
         % Analysis Filter (considers alpha and beta value)
-        [FFTanalysisfilters,~]  = FFTfractsplinefilters(N,alpha0+alpha,tau,type);
+        [FFTanalysisfilters,~]  = FFTfractsplinefilters(nSamples,alpha0+alpha,tau,type);
         
         %  Wavelet analysis 
         w = FFTwaveletanalysis1D(sh,FFTanalysisfilters,J);
