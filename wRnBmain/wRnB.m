@@ -5,7 +5,7 @@ restoredefaultpath;
 
 %  RnB library
 addpath(genpath('./functions'), 'data')
-s
+
 load('R37_N3.mat');
 
 fprintf('\n    Data:\n');
