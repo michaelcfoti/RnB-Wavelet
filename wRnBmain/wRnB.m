@@ -14,7 +14,7 @@ fprintf('\t . %d samples (%4.2f seconds @ %4.2f Hz)\n\n',size(data_epochs,2),siz
 fprintf('\nProcessing...\n\n');
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                            
-[sR, pW] = wRnB_extract_Rhythmic_signals(data_epochs,'J', 8, 'betaScales', [1,9]);
+[sR, pW] = rnb_wavelet(data_epochs,'J', 7, 'betaScales', [1,9]);
 pR      = RnB_compute_spectre_brut(sR,fs);                     
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
 

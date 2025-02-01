@@ -1,4 +1,4 @@
-function [sR,param] = wRnB_extract_Rhythmic_signals(s,varargin)
+function [sR,param] = rnb_wavelet(s,varargin)
 % Extract the rhytmic signal for each epoch of a dataset 
 %
 % INPUTS:
@@ -49,17 +49,17 @@ for i = 1:length(varargin)
     end
 end
 
-[Nepo,N]=size(s);
-pow2  = nextpow2(N);
-if J > pow2
+[nEpo,nSamples]=size(s);
+maxScales  = nextpow2(nSamples);
+if J > maxScales
     fprintf('\n Number of wavelet scales (J = %d)  is invalid.',J);
-    J = pow2 - 2;
-    fprintf(' Scale (J) set as : %d \n', J);
+    J = maxScales - 2;
+    fprintf(' J adusted to : %d \n', J);
 end
-if betaScales(2) > pow2
-    fprintf('\n Number of wavelet scales for slope computation (betaScales = %d)  is invalid.\n',betaScales(2));
-     betaScales(2) = pow2 - 2;
-    fprintf(' betaScales set as : %d \n',  betaScales(2));
+if betaScales(2) > maxScales
+    fprintf('\n Number of wavelet scales set for slope computation (betaScales = %d)  is invalid.\n',betaScales(2));
+     betaScales(2) = maxScales - 2;
+    fprintf(' betaScales adusted to : %d \n',  betaScales(2));
 end
 
 
@@ -73,9 +73,9 @@ for i = 2:1+J, a(i)=a(i-1)+nj(i-1); nj(i) = nj(i-1)/2; b(i) = a(i)+nj(i)-1; end
 
 % Initialize for output
 sR = zeros(size(s));
-BETAs = zeros(1,Nepo);
+BETAs = zeros(1,nEpo);
 
-    for isignal = 1:Nepo
+    for isignal = 1:nEpo
 
         % current epoch
         se = s(isignal,:);
