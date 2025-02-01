@@ -32,8 +32,8 @@ function [sR,param] = rnbWavelet(s,varargin)
     
     p = inputParser;
     addRequired(p, 's', @(x) isnumeric(x) && ismatrix(x));
-    addParameter(p, 'J', 9, @(x) isempty(x) || (isnumeric(x) && isscalar(x)));
-    addParameter(p, 'betaScales', [1, 9], @(x) isempty(x) || (isnumeric(x) && numel(x)==2));
+    addParameter(p, 'J', 9, @(x) isempty(x) || (isnumeric(x) && isscalar(x) && x > 0));
+    addParameter(p, 'betaScales', [1, 9], @(x) isempty(x) || (isnumeric(x) && numel(x)==2 && all(x > 0)));
     parse(p, s, varargin{:});
     
     J = p.Results.J;
