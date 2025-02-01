@@ -1,3 +1,5 @@
+function [sR,param] = rnbWavelet(s,varargin)
+
 % Extract the rhytmic signal for each epoch of a dataset 
 %
 % INPUTS:
@@ -25,7 +27,6 @@
 % References : - In progress (2024)
 %             :- Blu, T. & Unser, M.,"The Fractional Spline Wavelet Transform: Definition and Implementation", Proc. IEEE International 
 %                Conference on Acoustics, Speech, and Signal Processing (ICASSP'00), Istanbul, Turkey, Vol. {I}, pp. 512-515, June 5--9, 2000.  
-function [sR,param] = rnbWavelet(s,varargin)
     
     addpath(genpath('FracSpline'))
     
