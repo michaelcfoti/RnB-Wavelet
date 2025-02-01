@@ -1,4 +1,4 @@
-function [W] = RnB_compute_spectre_brut(data_epocs,fs)
+function [W] = compute_spectrum(data_epocs,fs)
 % Compute average spectral analysis 
 %
 % INPUTS:
