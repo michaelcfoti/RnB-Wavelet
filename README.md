@@ -20,9 +20,7 @@ Set of repositories to download :
 
 ![Alt text](Figures/FigGitHub.png)
 
-## References
-
-Please cite as the following,
+## Reference
 
 ```plaintext
 Dubé, J., Foti, M., Jaffard, S., Latreille, V., Frauscher, B., Carrier, J., & Lina, J. M.
