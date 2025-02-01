@@ -4,8 +4,8 @@ clc; clear; close all;
 restoredefaultpath;
 
 %  RnB library
-addpath(genpath('./RnB_v01'), 'data')
-
+addpath(genpath('./functions'), 'data')
+s
 load('R37_N3.mat');
 
 fprintf('\n    Data:\n');
