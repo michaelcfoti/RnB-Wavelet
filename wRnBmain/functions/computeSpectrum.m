@@ -1,4 +1,4 @@
-function [W] = compute_spectrum(data_epocs,fs)
+function [W] = computeSpectrum(data_epocs,fs)
 % Compute average spectral analysis 
 %
 % INPUTS:
