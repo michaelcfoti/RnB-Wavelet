@@ -4,7 +4,7 @@ clc; clear; close all;
 restoredefaultpath;
 
 %  RnB library
-addpath(genpath('./functions'), 'data')
+addpath(genpath('../functions'), 'data')
 
 load('R37_N3.mat');
 
