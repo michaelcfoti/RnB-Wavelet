@@ -1,6 +1,6 @@
 ## Tutorial
 
-This tutorial explains how users can extract rhythmic signals using their data set. 
+Users can extract rhythmic signals using their data set. 
 
 As an example, we use a dataset containing data from the hippocampus from the MNI-open EEG atlas (N. Ellenrieder et al., 2020).
 
@@ -29,7 +29,7 @@ a) Open `wRnB.m`
 b) Modify input parameters  in the following function according to your data :
 
 ```matlab
-[sR, pW] = wRnB_extract_Rhythmic_signals(data_epochs,'J', 8, 'betaScales', [1,9]);
+[sR, pW] = rnbWavelet(data_epochs,'J', 8, 'betaScales', [1,9]);
 ```
 Two parameters can be modified: betaScales and J, which refers to the arrhythmic signal estimation and whitening, respectively : 
 
