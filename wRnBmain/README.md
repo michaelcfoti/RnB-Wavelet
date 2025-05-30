@@ -1,4 +1,4 @@
-Users can extract rhythmic signals using their data set. The core functions are of the algorithm are located within the `rnb_wavelet` folder. 
+Users can extract rhythmic signals using their data set. The core functions of the algorithm are located within the `rnb_wavelet` folder. 
 
 As an example, we use a dataset containing data from the hippocampus from the MNI-open EEG atlas (N. Ellenrieder et al., 2020).
 
