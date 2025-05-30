@@ -11,9 +11,7 @@ The algorithm extracts a ‘rhythmic signal’ by filtering out the arrhythmic c
  
 ## File structure
 
-Set of repositories to download : 
 - wRnBmain: Main repository containing algorithm to extract rhythmic signal 
-- wRnBlive: Alternative Interactive live script repository to extract rhythmic signal
 
 ## Framework
 
