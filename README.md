@@ -19,11 +19,8 @@ The algorithm extracts a ‘rhythmic signal’ by filtering out the arrhythmic c
 
 ## Reference
 
-```plaintext
-Dubé, J., Foti, M., Jaffard, S., Latreille, V., Frauscher, B., Carrier, J., & Lina, J. M. (2026). Rhythms and Background (RnB):
+Dubé, J., Foti, M., Jaffard, S., Latreille, V., Frauscher, B., Carrier, J., & Lina, J. M. (2026). *Rhythms and Background (RnB): The spectroscopy of sleep recordings*. eneuro, 13(2).
 
-The spectroscopy of sleep recordings. eneuro, 13(2)
-```    
 Link: [https://doi.org/10.1523/ENEURO.0235-25.2025](https://doi.org/10.1523/ENEURO.0235-25.2025)
 
 ## Contributions
